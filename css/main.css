@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  background-color: #fff;
+}
+a,
+a:hover {
+  color: #000000 !important;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+input,
+button {
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  outline: none;
+  margin: 0px;
+}
+input:hover,
+button:hover {
+  margin: 0px;
+  border: 0;
+  outline: none;
+}
+input:focus,
+button:focus {
+  margin: 0px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none;
+  outline: none;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1700px;
+  padding: 0px;
+}
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 5px 0 5px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 768px;
+    padding: 0 8px 0 8px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+.nav-top {
+  width: 100%;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #E4E4E4;
+}
+@media (max-width: 767px) {
+  .nav-top {
+    width: auto;
+  }
+}
+.nav-top .nav-top__call {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #969693;
+}
+.nav-top .nav-top__btn {
+  background: #E7383E;
+  padding: 20px 25px !important;
+  color: #fff;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.nav-top .nav-top__btn--list {
+  background: #E7383E;
+  padding: 20px 25px !important;
+  color: #fff;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.nav-top .nav-link {
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+.navbar-toggler-icon {
+  background: none !important;
+}
+/*# sourceMappingURL=main.css.map */
