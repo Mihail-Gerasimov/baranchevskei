@@ -1,15 +1,31 @@
   $(document).ready(function() {
       // slider
-      $('.fade').slick({
+      $('.slider-fade').slick({
 
-          prevArrow: '.next-ar',
-          nextArrow: '.prew-ar',
+          //   prevArrow: '.next-ar',
+          //   nextArrow: '.prew-ar',
+          arrows: true,
           dots: false,
           infinite: true,
           speed: 500,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 10600,
           fade: true,
-          cssEase: 'linear'
+          cssEase: 'linear',
+          asNavFor: '.slider-top'
+
+      });
+
+      $('.slider-top').slick({
+
+          arrows: false,
+          dots: false,
+          infinite: true,
+          speed: 500,
+          autoplay: false,
+          autoplaySpeed: 10600,
+          fade: true,
+          cssEase: 'linear',
+          asNavFor: '.slider-fade'
       });
   });
