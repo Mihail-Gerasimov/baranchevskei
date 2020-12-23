@@ -12,6 +12,53 @@
 </head>
 
 <body>
+    <!-- modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-0 mb-4">
+                    <img src="./img/modal/modal-logo.png" alt="">
+                    <button type="button" class="close pr-0" data-dismiss="modal" aria-label="Close">
+        <span class="pr-4" aria-hidden="true">Закрыть</span>
+      </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="modal-body--content d-flex justify-content-between">
+                        <div class="modal-body--content__left">
+                            <h5 class="modal-title title-modal mb-5" id="staticBackdropLabel">Обратный звонок</h5>
+                            <form action="" class="d-flex flex-column mb-4">
+                                <input class="mb-4 pl-4 py-3 style-input" type="text" placeholder="Ваше Имя">
+                                <input class=" pl-4 py-3 style-input" type="text" placeholder="+7 (___) ___ - __ - __">
+                            </form>
+                            <label class="label-radio">
+                            <input type="checkbox" name="people-number " class="real-radio "> 
+                            <div class="custom-radio"><img src="./img/modal/chek.svg" alt=""></div>
+                            <p class="custom-radio--text">Согласие на обработку своих персональных данных</p>
+                        </label>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary m-0">Заказать звонок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-thanks" style="display: none;">
+        <div class="modal-thanks__content d-flex flex-column align-items-center justify-content-center">
+            <img class="mb-5" src="./img/modal/modal-logo.png" alt="">
+            <h5 class="modal-title title-modal mb-5 text-center" id="staticBackdropLabel">Заявка<br>отправлена
+            </h5>
+            <p class="thanks__content--text">
+                Мы получили вашу заявку.<br>Наш менеджер свяжится с вами.
+            </p>
+        </div>
+        <div class="modal-thanks__pink position-absolute bg-pink"></div>
+    </div>
+    <!-- modal -->
+
+
     <section class="header">
         <div class="container">
             <nav class="mb-4 d-flex flex-md-column align-items-center navbar px-0 navbar-expand-md navbar-light py-3">
@@ -26,7 +73,7 @@
                         <img src="img/header/logo.png" alt="logo" class="logo-img">
                     </a>
 
-                    <button class="nav-top__btn p-0 m-0 d-none d-md-block" data-toggle="modal" data-target="#exampleModal">Обратный звонок</button>
+                    <button class="nav-top__btn p-0 m-0 d-none d-md-block" data-toggle="modal" data-target="#staticBackdrop">Обратный звонок</button>
                 </div>
 
                 <div class="nav-mobile__item d-flex justify-content-center d-md-none">
@@ -63,8 +110,8 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="nav-top__btn p-0 m-0 mb-3 mx-auto d-block d-md-none" data-toggle="modal" data-target="#exampleModal">Обратный звонок</button>
-                    <div class="nav-top--block d-flex d-md-none flex-column mx-auto">
+                    <button class="nav-top__btn p-0 m-0 mb-3 mx-auto d-block d-md-none" data-toggle="modal" data-target="#staticBackdrop">Обратный звонок</button>
+                    <div class="nav-top--block d-flex d-md-none flex-column mx-auto mb-4">
                         <p class="nav-top__call mb-md-3">Есть вопросы? Звоните - поможем.</p>
                         <a class="nav-top__call text-secondary" href="tel:8846257272">Тел: 8 (846) 925-72-72</a>
                     </div>
@@ -101,7 +148,7 @@
                             <p class="stock__number">Акция действует с 01.10.20 по 30.11.20 г.</p>
                             <p class="stock-free position-relative">Бесплатный подбор линз осуществляется только в оптике по адресу г. Самара, 6 просека 161.
                             </p>
-                            <button class="nav-top__btn p-0 m-0" data-toggle="modal" data-target="#exampleModal">Получить подарок</button>
+                            <button class="nav-top__btn p-0 m-0" data-toggle="modal" data-target="#staticBackdrop">Получить подарок</button>
                         </div>
                     </div>
                     <div class="slide">
@@ -113,7 +160,7 @@
                             <p class="stock__number">Акция действует с 01.10.20 по 30.11.20 г.</p>
                             <p class="stock-free position-relative">Бесплатный подбор линз осуществляется только в оптике по адресу г. Самара, 6 просека 161.
                             </p>
-                            <button class="nav-top__btn p-0 m-0" data-toggle="modal" data-target="#exampleModal">Получить подарок</button>
+                            <button class="nav-top__btn p-0 m-0" data-toggle="modal" data-target="#staticBackdrop">Получить подарок</button>
                         </div>
                     </div>
                     <div class="slide">
@@ -125,7 +172,7 @@
                             <p class="stock__number">Акция действует с 01.10.20 по 30.11.20 г.</p>
                             <p class="stock-free position-relative">Бесплатный подбор линз осуществляется только в оптике по адресу г. Самара, 6 просека 161.
                             </p>
-                            <button class="nav-top__btn p-0 m-0" data-toggle="modal" data-target="#exampleModal">Получить подарок</button>
+                            <button class="nav-top__btn p-0 m-0" data-toggle="modal" data-target="#staticBackdrop">Получить подарок</button>
                         </div>
                     </div>
                     <div class="slide">
@@ -137,7 +184,7 @@
                             <p class="stock__number">Акция действует с 01.10.20 по 30.11.20 г.</p>
                             <p class="stock-free position-relative">Бесплатный подбор линз осуществляется только в оптике по адресу г. Самара, 6 просека 161.
                             </p>
-                            <button class="nav-top__btn p-0 m-0" data-toggle="modal" data-target="#exampleModal">Получить подарок</button>
+                            <button class="nav-top__btn p-0 m-0" data-toggle="modal" data-target="#staticBackdrop">Получить подарок</button>
                         </div>
                     </div>
                 </div>
