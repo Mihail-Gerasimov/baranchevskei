@@ -1,9 +1,6 @@
   $(document).ready(function() {
       // slider
       $('.slider-fade').slick({
-
-          // prevArrow: '.next-ar',
-          // nextArrow: '.prew-ar',
           arrows: true,
           dots: false,
           infinite: true,
@@ -21,15 +18,7 @@
           }]
       });
 
-      //   if ($(window).width() < 577) {
-
-      //       $('.slider-fade').slick({
-      //           dots: true
-      //       });
-      //   }
-
       $('.slider-top').slick({
-
           arrows: false,
           dots: false,
           infinite: true,
@@ -40,4 +29,20 @@
           cssEase: 'linear',
           asNavFor: '.slider-fade'
       });
+
+
+      $('.slider-right').slick({
+          prevArrow: $('.main-arrows .arrow-prev'),
+          nextArrow: $('.main-arrows .arrow-next'),
+          dots: false,
+          infinite: true,
+          slidesToShow: 2,
+          centerMode: true,
+          centerPadding: '300px',
+      });
+
+      $(".slider-right--item").on('afterChange', function(event, slick, currentSlide) {
+          $(".slide-count .dinamic").text(currentSlide + 1);
+      });
+
   });
