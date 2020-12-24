@@ -1,0 +1,559 @@
+.section__title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 88px;
+}
+
+.advantages {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 280px;
+}
+
+.advantages__container {
+    margin-bottom: 220px;
+}
+
+.advantages__row {
+    padding: 0 20px;
+    /* flex-wrap: wrap; */
+}
+
+.advantages__card:not(.advantages__card--last) {
+    position: relative;
+    margin-right: 10px;
+    padding-right: 40px;
+}
+
+.advantages__card:not(.advantages__card--last)::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #000000;
+    width: 1.5px;
+    height: 110px;
+}
+
+.advantages__img--bott {
+    display: none;
+}
+
+.advantages__number {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    color: #EEEEEE;
+}
+
+.advantages__description {
+    margin: 0;
+    max-width: 260px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.advantages__main {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 25px;
+    padding-right: 20px;
+}
+
+.advantages__img {
+    position: relative;
+    margin-right: 200px;
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.advantages__img::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background-color: #E7383E;
+    width: 40%;
+    height: 25px;
+}
+
+.advantages__img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25px;
+    background-color: #E7383E;
+    width: 25px;
+    height: 65%;
+}
+
+.diagnostics__title {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-bottom: 90px;
+    max-width: 530px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+}
+
+.diagnostics__description {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-bottom: 90px;
+    max-width: 440px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.diagnostics__button {
+    color: #E7383E;
+    border: 1px solid #E7383E;
+    padding: 20px 20px;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.diagnostics__button:hover {
+    transition: 0.3s;
+    color: #ffffff;
+    background-color: #E7383E;
+}
+
+.advantages__img--bot {
+    margin-left: 60px;
+}
+
+.glasses {
+    padding-left: 20px;
+    margin-bottom: 200px;
+}
+
+.advantages__main--glasses {
+    justify-content: flex-end;
+    padding-right: 0;
+}
+
+.advantages__img--glasses {
+    margin-right: 0;
+    margin-left: 180px;
+}
+
+.advantages__img--glasses>.advantages__img--bot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-15%, 130%);
+}
+
+.advantages__img--glasses::before {
+    top: -25px;
+    left: -25px;
+}
+
+.advantages__img--glasses::after {
+    top: 0;
+    left: -25px;
+}
+
+.diagnostics__description--glasses {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.diagnostics__description--glasses::before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 1px;
+    background-color: #000000;
+    top: 50%;
+    left: -50px;
+}
+
+.diagnostics__description--down {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #E7383E;
+    margin-left: 20px;
+}
+
+.diagnostics__description--glasses-box {
+    margin-bottom: 60px;
+    margin-left: 50px;
+}
+
+.diagnostics__description--glasses-top {
+    margin-bottom: 50px;
+}
+
+.diagnostics__title--lenses {
+    margin-bottom: 30px;
+}
+
+.diagnostics__description--lenses {
+    margin-bottom: 60px;
+}
+.lenses{
+    margin-bottom: 200px;
+}
+@media (max-width: 1650px) {
+    /* other */
+    .section__title {
+        font-size: 50px;
+    }
+    /* advantages */
+    .advantages__description {
+        font-size: 17px;
+        max-width: 180px;
+    }
+    .advantages__card:not(.advantages__card--last) {
+        position: relative;
+        padding-right: 20px;
+    }
+    .advantages__number {
+        font-size: 50px;
+    }
+    .advantages__row {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1350px) {
+    /* advantages */
+    .advantages{
+        margin-bottom: 230px;
+    }
+
+    .advantages__img::after {
+        width: 15px;
+        right: -15px;
+    }
+    .advantages__img::before {
+        height: 15px;
+        top: -15px;
+        right: -15px;
+    }
+    .advantages__img--glasses::before {
+        top: -15px;
+        left: -15px;
+    }
+    .advantages__img--glasses::after {
+        top: 0;
+        left: -15px;
+    }
+    .advantages__description {
+        font-size: 15px;
+    }
+    .advantages__number {
+        font-size: 40px;
+    }
+    .advantages__img {
+        margin-right: 120px;
+    }
+    .advantages__img--bot {
+        max-width: 50%;
+    }
+    /* diagnostics */
+    .diagnostics__title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .diagnostics__description {
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+    .diagnostics__button {
+        font-size: 15px;
+        padding: 15px;
+    }
+    .diagnostics__description--glasses-top,
+    .diagnostics__description--glasses,
+    .diagnostics__description--down {
+        font-size: 15px;
+    }
+    .diagnostics__description--glasses {
+        margin-bottom: 20px;
+    }
+    .diagnostics__description--glasses-box {
+        margin-bottom: 30px;
+    }
+    .diagnostics__description--glasses-top {
+        margin-bottom: 35px;
+    }
+    /* advantages */
+    .advantages__container {
+        margin-bottom: 150px;
+    }
+    .advantages__img--glasses {
+        margin-right: 0;
+    }
+    .advantages__img--glasses {
+        margin-left: 100px;
+    }
+    .lenses{
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* advantages */
+    .advantages{
+        margin-bottom: 180px;
+    }
+    .advantages__row {
+        width: 60%;
+        flex-wrap: wrap;
+    }
+    .advantages__description {
+        font-size: 15px;
+    }
+    .advantages__number {
+        font-size: 50px;
+    }
+    .advantages__img {
+        width: 380px;
+        margin-right: 30px;
+    }
+    .advantages__card:not(.advantages__card--last)::after {
+        display: none;
+    }
+    .advantages__img::after {
+        width: 10px;
+        right: -10px;
+    }
+    .advantages__img::before {
+        height: 10px;
+        top: -10px;
+        right: -10px;
+    }
+    .advantages__img--glasses::before {
+        top: -10px;
+        left: -10px;
+    }
+    .advantages__img--glasses::after {
+        top: 0;
+        left: -10px;
+    }
+    .advantages__img--glasses {
+        margin-right: 0;
+    }
+    /* diagnostics */
+    .diagnostics__button:hover {
+        transition: 0.3s;
+        color: #E7383E;
+        background-color: transparent;
+    }
+    .diagnostics__button {
+        font-size: 11px;
+        padding: 5px 15px;
+    }
+    .diagnostics__title {
+        line-height: 29px;
+    }
+    .diagnostics__description {
+        margin-bottom: 20px;
+        font-size: 10px;
+        max-width: 300px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* advantages */
+    .advantages{
+        margin-bottom: 110px;
+    }
+    .advantages__img {
+        margin: auto;
+    }
+    .advantages__card:not(.advantages__card--last) {
+        padding-right: 0;
+        margin-right: 20px;
+    }
+    .advantages__row {
+        width: 70%;
+        margin: auto;
+    }
+    .advantages__container {
+        margin-bottom: 70px;
+    }
+    .advantages__main {
+        flex-direction: column;
+        position: relative;
+    }
+    .advantages__container {
+        margin-bottom: 180px;
+    }
+    .advantages__box--box {
+        position: relative;
+    }
+    .advantages__img--bot {
+        display: none;
+    }
+    .advantages__img--bott {
+        display: block;
+        position: absolute;
+        right: -3%;
+        top: -19%;
+        z-index: -1;
+        height: 130%;
+    }
+    .advantages__img--bott-img {
+        height: 100%;
+    }
+    .advantages__box--box {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .advantages__main--glasses>.diagnostics {
+        order: 1;
+    }
+    .advantages__img--glasses>.advantages__img--bott {
+        right: auto;
+        left: -2.3%;
+    }
+    .diagnostics__title--glasses {
+        text-align: end;
+        left: auto;
+        right: 25%;
+    }
+    /* diagnostics */
+    .diagnostics {
+        margin: auto;
+    }
+    .diagnostics__description {
+        font-size: 16px;
+        max-width: 500px;
+    }
+    .diagnostics__title {
+        line-height: 44px;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 300;
+        max-width: 335px;
+        position: absolute;
+        left: 25%;
+        top: -110px;
+    }
+    .diagnostics__button {
+        font-size: 16px;
+        padding: 20px 15px;
+        margin: auto;
+        display: block;
+    }
+    .advantages__box--box-lenses {
+        padding-top: 65px;
+    }
+    .lenses{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* other */
+    .section__title {
+        font-size: 32px;
+        line-height: 44px;
+    }
+    /* advantages */
+    .advantages__row {
+        flex-direction: column;
+    }
+    .advantages__number {
+        font-size: 72px;
+    }
+    .advantages__description {
+        line-height: 22px;
+        font-size: 24px;
+        max-width: 310px;
+        margin-bottom: 30px;
+    }
+    .advantages__row {
+        width: auto;
+    }
+    .advantages__img {
+        width: 135%;
+        transform: translateX(-32%);
+    }
+    .advantages__main {
+        padding-right: 0;
+    }
+    .advantages__img--bott {
+        display: block;
+        position: absolute;
+        right: -1.5%;
+        top: -18%;
+        z-index: -1;
+    }
+    .advantages__img--glasses>.advantages__img--bott {
+        left: -1.5%;
+    }
+    .advantages__img--glasses {
+        transform: translateX(1%);
+    }
+    .advantages__box--box-glasses {
+        margin-bottom: 100px;
+    }
+    /* diagnostics */
+    .diagnostics {
+        padding: 0 12px 0 15px;
+    }
+    .diagnostics__title {
+        left: 5%;
+    }
+    .diagnostics__description {
+        max-width: 100%;
+    }
+    .diagnostics__button {
+        width: 100%;
+    }
+    .diagnostics--glasses {
+        padding-left: 0;
+    }
+    .diagnostics__description--down {
+        margin-left: 0;
+    }
+    .diagnostics__title--glasses {
+        left: auto;
+        right: 1%;
+    }
+    .diagnostics__description--down {
+        font-size: 15px;
+    }
+    .diagnostics--lenses {
+        padding: 0 12px 0 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .advantages__box--box-glasses {
+        margin-bottom: 50px;
+    }
+}
