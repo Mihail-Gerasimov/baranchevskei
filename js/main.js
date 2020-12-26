@@ -62,15 +62,19 @@
           infinite: true,
           slidesToShow: 2,
           centerMode: true,
+          row: 1,
           centerPadding: '300px',
           responsive: [{
-              breakpoint: 1431,
+              breakpoint: 768,
               settings: {
-                  centerPadding: '355px',
+                  row: 1,
+                  centerPadding: '30px',
                   slidesToShow: 1,
-                  centerMode: false,
                   fade: false,
-                  infinite: false
+                  slidesToScroll: 1,
+                  infinite: false,
+                  centerMode: true
+
 
               }
           }]

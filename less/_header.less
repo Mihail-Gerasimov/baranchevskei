@@ -63,12 +63,26 @@ color: #969693;
 }
  .nav-top__btn{
     background: #E7383E;
+    border: 1px solid  #E7383E;
     padding: 20px 25px !important;
     color: #fff;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        border: 1px solid  #ff0000;
+        background: #ffffff;
+        color: #E7383E;
+        transition: 0.4s;
+    }
+    &:focus{ 
+        border: 1px solid  #ff0000;
+        background: #ffffff;
+        color: #E7383E;
+        transition: 0.4s;
+    }
 }
 
 .nav-link{
