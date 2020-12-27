@@ -62,22 +62,38 @@
           infinite: true,
           slidesToShow: 2,
           centerMode: true,
-          row: 1,
+          autoplay: true,
           centerPadding: '300px',
           responsive: [{
-              breakpoint: 768,
-              settings: {
-                  row: 1,
-                  centerPadding: '30px',
-                  slidesToShow: 1,
-                  fade: false,
-                  slidesToScroll: 1,
-                  infinite: false,
-                  centerMode: true
-
-
+                  breakpoint: 1441,
+                  settings: {
+                      centerPadding: '100px',
+                  }
+              },
+              {
+                  breakpoint: 768,
+                  settings: {
+                      centerMode: true,
+                      row: 1,
+                      centerPadding: '50px',
+                      slidesToShow: 1,
+                      infinite: false,
+                      slidesToScroll: 1,
+                      dots: true
+                  }
+              },
+              {
+                  breakpoint: 426,
+                  settings: {
+                      infinite: false,
+                      centerMode: false,
+                      centerPadding: '0px',
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      dots: true
+                  }
               }
-          }]
+          ]
       });
 
       console.log(slide);
