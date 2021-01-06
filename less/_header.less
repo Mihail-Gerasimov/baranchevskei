@@ -357,7 +357,9 @@ color: #969693;
 
 .slider-fade .slick-prev{
     left: -100px;
-    background-image: url(../img/header/arrow-left.png);
+    filter: grayscale(100%);
+    transition: 0.3s;
+    background-image: url(../img/stock/arrow-left.png);
     background-color: #fff;
     font-size: 0;
 
@@ -371,20 +373,24 @@ color: #969693;
     padding: 0px;
     }
     @media (max-width: 992px){
-    bottom: 41px;
+    bottom: 85px;
     left: 323px;
     }
     @media (max-width: 767px){
         display: none !important;
     }
+    &:hover{
+        filter: none;
+    }
 }
 
 .slider-fade .slick-next{
     right: -100px;
-    background-image: url(../img/header/arrow-right.png);
+    filter: grayscale(100%);
+    background-image: url(../img/stock/arrow-right.png);
     background-color: #fff;
     font-size: 0;
-
+    transition: 0.3s;
     @media (max-width: 1670px){
     right: -70px;
     }
@@ -398,11 +404,14 @@ color: #969693;
     right: 765px;
     }
     @media (max-width: 992px){
-    bottom: 41px;
+    bottom: 85px;
     right: 135px;
     }
     @media (max-width: 767px){
         display: none !important;
+    }
+    &:hover{
+        filter: none;
     }
 }
 

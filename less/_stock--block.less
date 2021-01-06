@@ -90,6 +90,7 @@
     outline: none;
   }
   .stock__slider-card-text {
+    display: none;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -120,9 +121,16 @@
     color: #E7383E;
   }
   .stock__slider-card-button:hover {
+    border: 1px solid #E7383E;
     transition: 0.3s;
     background-color: #E7383E;
     color: #ffffff;
+  }
+  .stock__slider-card-button:focus {
+    border: 1px solid #E7383E;
+    background: transparent;
+    color: #E7383E;
+
   }
   .stock__slider-card-wrap {
     padding: 0 45px 0;
@@ -161,6 +169,7 @@
     width: 100%;
   }
   .stock__slider-card--box {
+    max-width: 480px;
     //   padding: 50px;
     /* margin-right: 45px; */
     display: flex;
@@ -219,7 +228,12 @@
     align-items: center;
     justify-content: center;
   }
-    
+  @media screen and ( max-height: 960px  ) {
+    .stock__modal {
+      overflow: auto;
+      align-items: flex-start;
+    }
+  }
   .stock__modal--visible {
     opacity: 1;
     visibility: visible;
@@ -268,8 +282,8 @@
     line-height: 17px;
   }
   .stock__modal-mobile .stock__modal-close {
-    top: 20px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
   }
   .stock__modal-button {
     width: 100%;
@@ -381,7 +395,7 @@
     }
   }
  
-  @media screen and ( max-height: 600px  ) {
+  @media screen and ( max-height: 960px  ) {
     .stock__modal-mobile {
       overflow: auto;
       align-items: flex-start;
