@@ -52,7 +52,10 @@
           fade: true,
           cssEase: 'linear',
           asNavFor: '.slider-fade'
+
+
       });
+
 
 
       $('.slider-right').slick({
