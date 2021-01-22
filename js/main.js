@@ -47,7 +47,7 @@
           dots: false,
           infinite: true,
           speed: 500,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 10000,
           fade: true,
           cssEase: 'linear',

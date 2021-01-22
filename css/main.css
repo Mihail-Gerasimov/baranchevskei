@@ -632,8 +632,8 @@ button:focus {
 }
 @media (max-width: 1400px) {
   .acuvue {
-    font-size: 29px;
-    line-height: 37px;
+    font-size: 19px;
+    line-height: 32px;
     padding: 25px 25px;
   }
 }
@@ -765,6 +765,11 @@ button:focus {
 }
 .slick-dots li:last-child {
   margin-right: 0px;
+}
+@media (max-width: 500px) {
+  .slick-dots li {
+    margin-right: 8px;
+  }
 }
 .slick-dots li button {
   line-height: 0;
